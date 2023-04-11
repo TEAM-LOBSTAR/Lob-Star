@@ -1,4 +1,13 @@
-import * as React from "react";
+import { css } from "@emotion/react";
+
 export const Button = () => {
-	return <button>Boop</button>;
+	return (
+		<button
+			css={css`
+				background-color: black;
+			`}
+		>
+			Boop
+		</button>
+	);
 };
