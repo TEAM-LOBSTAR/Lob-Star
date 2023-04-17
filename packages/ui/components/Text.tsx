@@ -1,8 +1,8 @@
 import React from "react";
 import classnames from "classnames";
 import { css } from "@emotion/react";
-import { useTextElement } from "../utils/useTextElement";
-import { splitLine } from "../utils/splitLine";
+import useTextElement from "../utils/useTextElement";
+import splitLine from "../utils/splitLine";
 import "../scss/text.scss";
 
 export type TextProps = {

@@ -1,6 +1,6 @@
 import { TextProps } from "../components/Text";
 
-export function useTextElement(
+function useTextElement(
 	variant: TextProps["variant"],
 	children: React.ReactNode
 ) {
@@ -20,3 +20,5 @@ export function useTextElement(
 			return "span";
 	}
 }
+
+export default useTextElement;
