@@ -1,0 +1,56 @@
+.text-input-container {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 16px;
+
+	&.text-input-container--disabled {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+}
+
+.text-input-label {
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+
+.text-input {
+	padding: 12px 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	line-height: 24px;
+	outline: none;
+	transition: all 0.2s ease-in-out;
+
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.2); // 파란색 테두리 추가
+	}
+
+	&::placeholder {
+		color: #a0a0a0;
+	}
+
+	&.text-input--error {
+		border-color: red;
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 0 2px rgba(218, 2, 2, 0.2); // 파란색 테두리 추가
+		}
+	}
+
+	&.text-input--required {
+		border-color: blue;
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 0 2px rgba(42, 0, 190, 0.2); // 파란색 테두리 추가
+		}
+	}
+}
+
+.text-input-error-message {
+	color: red;
+	margin-top: 8px;
+	margin-left: 4px;
+}
